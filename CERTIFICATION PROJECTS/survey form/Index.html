@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Mental health form</h1>
+    <p id="description">The objective of this form is to get a better perspective of your mental health. <br>
+        Please fill in the form and we will be in touch within 3 to 4 business days.</p>
+    <div class="form">
+        <form id="survey-form" action="">
+            <!-- this fieldset is for the patient data -->
+            <fieldset>
+                <label for="name-label" id="name-label">Name:<input placeholder="Insert Name" required id="name"
+                        type="text"></label>
+                <br>
+                <label for="email-label" id="email-label">Email:<input placeholder="babalonia@gmail.com" required
+                        type="email" name="" id="email"></label> <br>
+                <label for="number-label" id="number-label">Age:<input placeholder="choose age" type="number" name=""
+                        id="number" min="16" max="120"></label> <br>
+
+                <label>Gender:<select name="reffer" id="dropdown">
+                        <option value="choose gender">choose gender</option>
+                        <option value="man">man</option>
+                        <option value="woman">woman</option>
+                    </select>
+                </label>
+                <!-- thid fieldset is to choose a current state of happiness -->
+            </fieldset>
+            <fieldset>
+                <h3>are you happy?</h3>
+                <label for="yes"><input type="radio" name="type of person" id="yes" value="yes">yes</label><br>
+                <label for="no"><input type="radio" name="type of person" id="no" value="no">no</label><br>
+                <label for="sometimes"><input type="radio" name="type of person" id="sometimes"
+                        value="sometimes">sometimes</label><br>
+                <label for="not sure"><input type="radio" name="type of person" id="not sure" value="not sure">not
+                    sure</label>
+                <!-- this fielset is to choose what you think you should do better -->
+            </fieldset>
+            <fieldset>
+                <h3>what could you do better?</h3>
+                <label for="changes" id="excercise"><input type="checkbox" value="excercise">excercise more</label> <br>
+                <label for="changes" id="eat-healtier"><input type="checkbox" value="eat-healtier">eat
+                    healtier</label><br>
+                <label for="changes" id="more-sex"><input type="checkbox" value="more-sex">more sex</label>
+                <!-- This fieldset is to give the opportunity to let the patient tell his own solution -->
+            </fieldset>
+            <fieldset>
+                <h3>tell us what you are going to change this week</h3>
+                <textarea name="bettering" id="" cols="30" rows="10" placeholder="This week I'm going to..."></textarea>
+            </fieldset>
+    </div>
+    <!-- here is the submit button -->
+    <div class="buttonHolder">
+        <input value="submit" title="submit" type="submit" id="btn_s">
+    </div>
+    </form>
+
+</body>
+
+</html>
